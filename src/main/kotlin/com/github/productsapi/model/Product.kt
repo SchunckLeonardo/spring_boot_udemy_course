@@ -12,7 +12,7 @@ class Product {
 
     @Id
     @Column(name = "id")
-    val id: String = ""
+    var id: String = ""
 
     @Column(name = "name")
     val name: String = ""
