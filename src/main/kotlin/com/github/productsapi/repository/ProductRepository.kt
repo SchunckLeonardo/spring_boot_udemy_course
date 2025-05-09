@@ -4,4 +4,7 @@ import com.github.productsapi.model.Product
 import org.springframework.data.jpa.repository.JpaRepository
 
 interface ProductRepository : JpaRepository<Product, String> {
+
+    fun findByName(name: String): List<Product>
+
 }
